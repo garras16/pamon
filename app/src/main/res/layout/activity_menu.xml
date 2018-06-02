@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#04C8C7"
+    tools:context=".activityMenu"
+    android:id="@+id/relativeLayout">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/menuToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_blue_dark"
+        android:minHeight="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/menu"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/monitorButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="105dp"
+        android:contentDescription="@string/monitoring"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pamon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/share"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/share"
+        app:layout_constraintTop_toTopOf="@+id/monitorButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/pasienButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pasien"
+        app:layout_constraintStart_toStartOf="@+id/monitorButton"
+        app:layout_constraintTop_toBottomOf="@+id/monitorButton" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/shareButton"
+        app:layout_constraintTop_toBottomOf="@+id/monitorButton"
+        app:srcCompat="@drawable/setting" />
+
+</android.support.constraint.ConstraintLayout>

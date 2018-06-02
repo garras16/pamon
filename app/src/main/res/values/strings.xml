@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pamon</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="here">Here</string>
+    <string name="don_t_have_an_account_create">Don\'t have an account ? Create</string>
+    <string name="menu">MENU</string>
+    <string name="monitoring">MONITORING</string>
+
+    <string name="title_activity_pamon">activity_pamon</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_setting">Settings</string>
+    <string name="share">SHARE</string>
+</resources>
